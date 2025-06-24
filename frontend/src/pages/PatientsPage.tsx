@@ -14,7 +14,7 @@ const Patients: React.FC = () => {
   return (
     <LocalizationProvider dateAdapter={AdapterMoment} adapterLocale="de">
       {id ? (
-        <PatientLayoutPage id={id} />
+        <PatientLayoutPage />
       ) : (
         <Box sx={{ height: "100%" }}>
           <Stack

@@ -33,11 +33,10 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-const PatientLayoutPage = ({ id }: { id: string }) => {
-  console.log(id);
+const PatientLayoutPage = () => {
+  const { id: patientId } = useParams<{ id: string }>();
   const [value, setValue] = useState(0);
   const [isCommentsOpen, setIsCommentsOpen] = useState(false);
-  const { id: patientId } = useParams<{ id: string }>();
   const [comments, setComments] = useState<Comment[]>(() => {
     return patientId ? PatientService.getPatientComments(patientId) : [];
   });
