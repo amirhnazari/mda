@@ -14,6 +14,16 @@ const vitalTypeToColumn: Record<string, string> = {
   respiration: "Respiration",
 };
 
+const days = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+
 interface VitalSignsTableProps {
   patientVitals: VitalSign[];
 }
@@ -28,16 +38,6 @@ interface TableRow {
 }
 
 const VitalSignsTable = ({ patientVitals }: VitalSignsTableProps) => {
-  // Build a table where each row is a day, and each column is a vital type
-  const days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
 
   const data: TableRow[] = useMemo(() => {
     if (!patientVitals) return [];
