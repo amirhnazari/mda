@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import {
   Box,
@@ -63,12 +63,13 @@ const Messages: React.FC = () => {
       handleMessageClick(pendingMessage);
       setPendingMessage(null);
     }
-  }, [pendingMessage, availableStaff]);
+  }, [pendingMessage, availableStaff, handleMessageClick]);
 
-  const handleMessageClick = (message: Message) => {
-    // Mark message as read
-    MessageService.markAsRead(message.id);
-    setMessages(MessageService.getMessages());
+  const handleMessageClick = useCallback(
+    (message: Message) => {
+      // Mark message as read
+      MessageService.markAsRead(message.id);
+      setMessages(MessageService.getMessages());
 
     // Create or get chat with the sender
     const senderStaff = availableStaff.find(
@@ -102,7 +103,9 @@ const Messages: React.FC = () => {
 
       setActiveChat(chat);
     }
-  };
+  },
+  [availableStaff]
+  );
 
   const handleDeleteMessage = (messageId: string) => {
     setMessageToDelete(messageId);
