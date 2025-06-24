@@ -1,0 +1,1229 @@
+[
+  {
+    "id": "018e19f0-cf3a-7ccf-8d00-8d6d52e49f98",
+    "firstName": "Lena",
+    "lastName": "Müller",
+    "gender": "Female",
+    "age": 30,
+    "avatarAlias": "lena-mueller",
+    "patientNumber": "16984",
+    "bloodType": "A+",
+    "admissionDate": "2025-04-23T00:00:00.000Z",
+    "room": "7B",
+    "doctorName": "Dr. House",
+    "contact": {
+      "phone": "123-456-7890",
+      "email": "lena.muller@gmail.com",
+      "address": "123 Main St"
+    },
+    "prescriptions": [
+      {
+        "id": "presc-001",
+        "medication": "Lisinopril",
+        "dosage": "10mg",
+        "month": "April",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-002",
+        "medication": "Metformin",
+        "dosage": "500mg",
+        "month": "May",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-003",
+        "medication": "Ibuprofen",
+        "dosage": "400mg",
+        "month": "June",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-004",
+        "medication": "Vitamin D",
+        "dosage": "1000 IU",
+        "month": "June",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-005",
+        "medication": "Atorvastatin",
+        "dosage": "20mg",
+        "month": "March",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-006",
+        "medication": "Aspirin",
+        "dosage": "81mg",
+        "month": "May",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-028",
+        "medication": "Omeprazole",
+        "dosage": "20mg",
+        "month": "May",
+        "receiptFree": false
+      }
+    ],
+    "medicalConditions": [
+      {
+        "name": "Hypertension",
+        "shortExplanation": "High blood pressure"
+      },
+      {
+        "name": "High Cholesterol",
+        "shortExplanation": "Excess lipids in the blood"
+      },
+      { "name": "Type 2 Diabetes", "shortExplanation": "Insulin resistance" },
+      { "name": "Anxiety", "shortExplanation": "Generalized anxiety disorder" },
+      {
+        "name": "Sleep Apnea",
+        "shortExplanation": "Breathing interruption during sleep"
+      }
+    ],
+    "vitals": [
+      {
+        "type": "heartRate",
+        "readings": [
+          { "day": "Monday", "value": "75 bpm" },
+          { "day": "Tuesday", "value": "76 bpm" },
+          { "day": "Wednesday", "value": "74 bpm" },
+          { "day": "Thursday", "value": "78 bpm" },
+          { "day": "Friday", "value": "72 bpm" },
+          { "day": "Saturday", "value": "70 bpm" },
+          { "day": "Sunday", "value": "73 bpm" }
+        ]
+      },
+      {
+        "type": "bloodPressure",
+        "readings": [
+          { "day": "Monday", "value": "120/80 mmHg" },
+          { "day": "Tuesday", "value": "122/81 mmHg" },
+          { "day": "Wednesday", "value": "118/79 mmHg" },
+          { "day": "Thursday", "value": "124/82 mmHg" },
+          { "day": "Friday", "value": "119/80 mmHg" },
+          { "day": "Saturday", "value": "117/78 mmHg" },
+          { "day": "Sunday", "value": "121/80 mmHg" }
+        ]
+      },
+      {
+        "type": "temperature",
+        "readings": [
+          { "day": "Monday", "value": "36.8 °C" },
+          { "day": "Tuesday", "value": "36.9 °C" },
+          { "day": "Wednesday", "value": "36.7 °C" },
+          { "day": "Thursday", "value": "37.0 °C" },
+          { "day": "Friday", "value": "36.8 °C" },
+          { "day": "Saturday", "value": "36.6 °C" },
+          { "day": "Sunday", "value": "36.8 °C" }
+        ]
+      },
+      {
+        "type": "oxygenSat",
+        "readings": [
+          { "day": "Monday", "value": "98%" },
+          { "day": "Tuesday", "value": "99%" },
+          { "day": "Wednesday", "value": "98%" },
+          { "day": "Thursday", "value": "97%" },
+          { "day": "Friday", "value": "98%" },
+          { "day": "Saturday", "value": "99%" },
+          { "day": "Sunday", "value": "98%" }
+        ]
+      },
+      {
+        "type": "respiration",
+        "readings": [
+          { "day": "Monday", "value": "16 breaths/min" },
+          { "day": "Tuesday", "value": "17 breaths/min" },
+          { "day": "Wednesday", "value": "16 breaths/min" },
+          { "day": "Thursday", "value": "18 breaths/min" },
+          { "day": "Friday", "value": "16 breaths/min" },
+          { "day": "Saturday", "value": "15 breaths/min" },
+          { "day": "Sunday", "value": "16 breaths/min" }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-001",
+        "title": "Initial Consultation Notes",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-23"
+      },
+      {
+        "id": "doc-002",
+        "title": "Blood Test Results",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-25"
+      },
+      {
+        "id": "doc-003",
+        "title": "ECG Report",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-28"
+      },
+      {
+        "id": "doc-004",
+        "title": "Prescription History",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-05-01"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-001",
+        "author": "Dr. Laura Mörtel",
+        "content": "Patient is responding well to treatment.",
+        "timestamp": "2025-04-24T09:00:00.000Z",
+        "avatarAlias": "dr-laura-moertel",
+        "done": false
+      },
+      {
+        "id": "comment-002",
+        "author": "Dr. Michael Rabb",
+        "content": "Patient is responding well to treatment.",
+        "timestamp": "2025-04-24T09:00:00.000Z",
+        "avatarAlias": "dr-michael-rabb",
+        "done": true
+      },
+      {
+        "id": "comment-003",
+        "author": "Nurse Tania Guzman",
+        "content": "Blood pressure readings have been stable for the past 3 days.",
+        "timestamp": "2025-04-25T14:30:00.000Z",
+        "avatarAlias": "nurse-tania-guzman",
+        "done": false
+      },
+      {
+        "id": "comment-004",
+        "author": "PA Elena Ramos",
+        "content": "Scheduled for follow-up blood work next week.",
+        "timestamp": "2025-04-26T11:15:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": true
+      },
+      {
+        "id": "comment-005",
+        "author": "NP. Aaron Kewel",
+        "content": "Patient reports improved sleep quality since medication adjustment.",
+        "timestamp": "2025-04-27T16:45:00.000Z",
+        "avatarAlias": "np-arron-kewel",
+        "done": false
+      },
+      {
+        "id": "comment-006",
+        "author": "Nurse Mehrdad Pishbar",
+        "content": "Medication adherence has been excellent.",
+        "timestamp": "2025-04-28T08:20:00.000Z",
+        "avatarAlias": "nurse-mehrdad-pishbar",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "018e19f2-dea1-7c4b-bb01-aad5e38c3f5c",
+    "firstName": "Marcus",
+    "lastName": "Malik",
+    "gender": "Male",
+    "age": 45,
+    "avatarAlias": "marcus-malik",
+    "patientNumber": "08421",
+    "bloodType": "O-",
+    "admissionDate": "2025-04-19T00:00:00.000Z",
+    "room": "2A",
+    "doctorName": "Dr. Cuddy",
+    "contact": {
+      "phone": "987-654-3210",
+      "email": "mar.malik@example.com",
+      "address": "456 Oak St"
+    },
+    "prescriptions": [
+      {
+        "id": "presc-007",
+        "medication": "Metformin",
+        "dosage": "500mg",
+        "month": "April",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-008",
+        "medication": "Insulin",
+        "dosage": "10 units",
+        "month": "June",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-009",
+        "medication": "Acetaminophen",
+        "dosage": "500mg",
+        "month": "May",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-010",
+        "medication": "Lisinopril",
+        "dosage": "5mg",
+        "month": "February",
+        "receiptFree": false
+      }
+    ],
+    "medicalConditions": [
+      { "name": "Type 2 Diabetes", "shortExplanation": "Insulin resistance" },
+      { "name": "Hypertension", "shortExplanation": "High blood pressure" },
+      {
+        "name": "Chronic Kidney Disease",
+        "shortExplanation": "Gradual loss of kidney function"
+      },
+      {
+        "name": "Peripheral Neuropathy",
+        "shortExplanation": "Nerve damage in extremities"
+      },
+      { "name": "Retinopathy", "shortExplanation": "Damage to the retina" }
+    ],
+    "vitals": [
+      {
+        "type": "heartRate",
+        "readings": [
+          { "day": "Monday", "value": "80 bpm" },
+          { "day": "Tuesday", "value": "81 bpm" },
+          { "day": "Wednesday", "value": "79 bpm" },
+          { "day": "Thursday", "value": "82 bpm" },
+          { "day": "Friday", "value": "78 bpm" },
+          { "day": "Saturday", "value": "77 bpm" },
+          { "day": "Sunday", "value": "80 bpm" }
+        ]
+      },
+      {
+        "type": "bloodPressure",
+        "readings": [
+          { "day": "Monday", "value": "130/85 mmHg" },
+          { "day": "Tuesday", "value": "132/86 mmHg" },
+          { "day": "Wednesday", "value": "128/84 mmHg" },
+          { "day": "Thursday", "value": "134/87 mmHg" },
+          { "day": "Friday", "value": "129/85 mmHg" },
+          { "day": "Saturday", "value": "127/83 mmHg" },
+          { "day": "Sunday", "value": "131/85 mmHg" }
+        ]
+      },
+      {
+        "type": "temperature",
+        "readings": [
+          { "day": "Monday", "value": "37.0 °C" },
+          { "day": "Tuesday", "value": "37.1 °C" },
+          { "day": "Wednesday", "value": "36.9 °C" },
+          { "day": "Thursday", "value": "37.2 °C" },
+          { "day": "Friday", "value": "37.0 °C" },
+          { "day": "Saturday", "value": "36.8 °C" },
+          { "day": "Sunday", "value": "37.0 °C" }
+        ]
+      },
+      {
+        "type": "oxygenSat",
+        "readings": [
+          { "day": "Monday", "value": "99%" },
+          { "day": "Tuesday", "value": "98%" },
+          { "day": "Wednesday", "value": "99%" },
+          { "day": "Thursday", "value": "97%" },
+          { "day": "Friday", "value": "99%" },
+          { "day": "Saturday", "value": "99%" },
+          { "day": "Sunday", "value": "98%" }
+        ]
+      },
+      {
+        "type": "respiration",
+        "readings": [
+          { "day": "Monday", "value": "18 breaths/min" },
+          { "day": "Tuesday", "value": "19 breaths/min" },
+          { "day": "Wednesday", "value": "18 breaths/min" },
+          { "day": "Thursday", "value": "20 breaths/min" },
+          { "day": "Friday", "value": "18 breaths/min" },
+          { "day": "Saturday", "value": "17 breaths/min" },
+          { "day": "Sunday", "value": "18 breaths/min" }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-005",
+        "title": "Blood Sugar Log",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-20"
+      },
+      {
+        "id": "doc-006",
+        "title": "Diabetes Management Plan",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-22"
+      },
+      {
+        "id": "doc-007",
+        "title": "Kidney Function Test",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-24"
+      },
+      {
+        "id": "doc-008",
+        "title": "Ophthalmology Report",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-26"
+      },
+      {
+        "id": "doc-009",
+        "title": "Nutritionist Consultation",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-30"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-007",
+        "author": "Dr. Laura Mörtel",
+        "content": "Blood sugar levels are stabilizing.",
+        "timestamp": "2025-04-22T11:30:00.000Z",
+        "avatarAlias": "dr-laura-moertel",
+        "done": false
+      },
+      {
+        "id": "comment-008",
+        "author": "Nurse Tania Guzman",
+        "content": "Patient needs dietary consultation for better diabetes management.",
+        "timestamp": "2025-04-23T09:15:00.000Z",
+        "avatarAlias": "nurse-tania-guzman",
+        "done": true
+      },
+      {
+        "id": "comment-009",
+        "author": "Dr. Michael Rabb",
+        "content": "Insulin dosage may need adjustment based on recent readings.",
+        "timestamp": "2025-04-24T13:45:00.000Z",
+        "avatarAlias": "dr-michael-rabb",
+        "done": false
+      },
+      {
+        "id": "comment-010",
+        "author": "PA Elena Ramos",
+        "content": "Foot examination scheduled for diabetic complications screening.",
+        "timestamp": "2025-04-25T10:00:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": true
+      },
+      {
+        "id": "comment-011",
+        "author": "NP. Aaron Kewel",
+        "content": "Patient shows good understanding of carbohydrate counting.",
+        "timestamp": "2025-04-26T15:30:00.000Z",
+        "avatarAlias": "np-arron-kewel",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "018e19f3-fa33-7e41-9451-8b63e5a4dca1",
+    "firstName": "Noah",
+    "lastName": "Perrati",
+    "gender": "Male",
+    "age": 28,
+    "avatarAlias": "noah-perrati",
+    "patientNumber": "13250",
+    "bloodType": "B+",
+    "admissionDate": "2025-04-01T00:00:00.000Z",
+    "room": "44A",
+    "doctorName": "Dr. Wilson",
+    "contact": {
+      "phone": "555-123-4567",
+      "email": "noah.perrati@gmx.com",
+      "address": "789 Pine St"
+    },
+    "prescriptions": [
+      {
+        "id": "presc-011",
+        "medication": "Albuterol Inhaler",
+        "dosage": "2 puffs as needed",
+        "month": "April",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-012",
+        "medication": "Montelukast",
+        "dosage": "10mg",
+        "month": "June",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-013",
+        "medication": "Saline Nasal Spray",
+        "dosage": "As needed",
+        "month": "May",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-014",
+        "medication": "Prednisone",
+        "dosage": "20mg",
+        "month": "January",
+        "receiptFree": false
+      }
+    ],
+    "medicalConditions": [
+      {
+        "name": "Asthma",
+        "shortExplanation": "Chronic lung disease causing inflammation"
+      },
+      {
+        "name": "Seasonal Allergies",
+        "shortExplanation": "Allergic reaction to pollen"
+      },
+      {
+        "name": "COPD",
+        "shortExplanation": "Obstructive lung disease"
+      }
+    ],
+    "vitals": [
+      {
+        "type": "heartRate",
+        "readings": [
+          { "day": "Monday", "value": "88 bpm" },
+          { "day": "Tuesday", "value": "89 bpm" },
+          { "day": "Wednesday", "value": "87 bpm" },
+          { "day": "Thursday", "value": "90 bpm" },
+          { "day": "Friday", "value": "86 bpm" },
+          { "day": "Saturday", "value": "85 bpm" },
+          { "day": "Sunday", "value": "88 bpm" }
+        ]
+      },
+      {
+        "type": "bloodPressure",
+        "readings": [
+          { "day": "Monday", "value": "118/78 mmHg" },
+          { "day": "Tuesday", "value": "120/79 mmHg" },
+          { "day": "Wednesday", "value": "116/77 mmHg" },
+          { "day": "Thursday", "value": "122/80 mmHg" },
+          { "day": "Friday", "value": "117/78 mmHg" },
+          { "day": "Saturday", "value": "115/76 mmHg" },
+          { "day": "Sunday", "value": "119/78 mmHg" }
+        ]
+      },
+      {
+        "type": "temperature",
+        "readings": [
+          { "day": "Monday", "value": "36.9 °C" },
+          { "day": "Tuesday", "value": "37.0 °C" },
+          { "day": "Wednesday", "value": "36.8 °C" },
+          { "day": "Thursday", "value": "37.1 °C" },
+          { "day": "Friday", "value": "36.9 °C" },
+          { "day": "Saturday", "value": "36.7 °C" },
+          { "day": "Sunday", "value": "36.9 °C" }
+        ]
+      },
+      {
+        "type": "oxygenSat",
+        "readings": [
+          { "day": "Monday", "value": "95%" },
+          { "day": "Tuesday", "value": "96%" },
+          { "day": "Wednesday", "value": "95%" },
+          { "day": "Thursday", "value": "94%" },
+          { "day": "Friday", "value": "95%" },
+          { "day": "Saturday", "value": "96%" },
+          { "day": "Sunday", "value": "95%" }
+        ]
+      },
+      {
+        "type": "respiration",
+        "readings": [
+          { "day": "Monday", "value": "20 breaths/min" },
+          { "day": "Tuesday", "value": "21 breaths/min" },
+          { "day": "Wednesday", "value": "20 breaths/min" },
+          { "day": "Thursday", "value": "22 breaths/min" },
+          { "day": "Friday", "value": "20 breaths/min" },
+          { "day": "Saturday", "value": "19 breaths/min" },
+          { "day": "Sunday", "value": "20 breaths/min" }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-010",
+        "title": "Spirometry Results",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-02"
+      },
+      {
+        "id": "doc-011",
+        "title": "Chest X-Ray",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-05"
+      },
+      {
+        "id": "doc-012",
+        "title": "Allergy Test Results",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-08"
+      },
+      {
+        "id": "doc-013",
+        "title": "Pulmonologist Consultation",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-04-12"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-012",
+        "author": "Dr. Michael Rabb",
+        "content": "Patient reports reduced frequency of asthma attacks.",
+        "timestamp": "2025-04-15T14:00:00.000Z",
+        "avatarAlias": "dr-michael-rabb",
+        "done": true
+      },
+      {
+        "id": "comment-013",
+        "author": "NP. Aaron Kewel",
+        "content": "Patient reports reduced frequency of asthma attacks.",
+        "timestamp": "2025-04-15T14:00:00.000Z",
+        "avatarAlias": "np-arron-kewel",
+        "done": false
+      },
+      {
+        "id": "comment-014",
+        "author": "Dr. Laura Mörtel",
+        "content": "Peak flow readings have improved significantly this week.",
+        "timestamp": "2025-04-16T10:30:00.000Z",
+        "avatarAlias": "dr-laura-moertel",
+        "done": false
+      },
+      {
+        "id": "comment-015",
+        "author": "Nurse Mehrdad Pishbar",
+        "content": "Patient demonstrates proper inhaler technique.",
+        "timestamp": "2025-04-17T12:15:00.000Z",
+        "avatarAlias": "nurse-mehrdad-pishbar",
+        "done": true
+      },
+      {
+        "id": "comment-016",
+        "author": "PA Elena Ramos",
+        "content": "Environmental triggers assessment completed.",
+        "timestamp": "2025-04-18T09:45:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": true
+      },
+      {
+        "id": "comment-017",
+        "author": "Nurse Tania Guzman",
+        "content": "Need to discuss seasonal allergy management plan.",
+        "timestamp": "2025-04-19T16:20:00.000Z",
+        "avatarAlias": "nurse-tania-guzman",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "018e19f5-cd12-72ff-9812-84f7de01f1e9",
+    "firstName": "Oanh",
+    "lastName": "Nguyen",
+    "gender": "Female",
+    "age": 52,
+    "avatarAlias": "oanh-nguyen",
+    "patientNumber": "98351",
+    "bloodType": "AB+",
+    "admissionDate": "2025-02-10T00:00:00.000Z",
+    "room": "9D",
+    "doctorName": "Dr. Foreman",
+    "contact": {
+      "phone": "555-987-6543",
+      "email": "Oanhnguyen@gmail.com",
+      "address": "321 Birch St"
+    },
+    "prescriptions": [
+      {
+        "id": "presc-015",
+        "medication": "Ibuprofen",
+        "dosage": "600mg",
+        "month": "February",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-016",
+        "medication": "Naproxen",
+        "dosage": "220mg",
+        "month": "May",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-017",
+        "medication": "Allopurinol",
+        "dosage": "100mg",
+        "month": "June",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-018",
+        "medication": "Calcium Carbonate",
+        "dosage": "500mg",
+        "month": "April",
+        "receiptFree": true
+      }
+    ],
+    "medicalConditions": [
+      {
+        "name": "Gout",
+        "shortExplanation": "Form of inflammatory arthritis"
+      },
+      {
+        "name": "Osteoarthritis",
+        "shortExplanation": "Degenerative joint disease"
+      },
+      {
+        "name": "Rheumatoid Arthritis",
+        "shortExplanation": "Autoimmune joint inflammation"
+      },
+      {
+        "name": "Osteoporosis",
+        "shortExplanation": "Brittle and fragile bones"
+      }
+    ],
+    "vitals": [
+      {
+        "type": "heartRate",
+        "readings": [
+          { "day": "Monday", "value": "70 bpm" },
+          { "day": "Tuesday", "value": "71 bpm" },
+          { "day": "Wednesday", "value": "69 bpm" },
+          { "day": "Thursday", "value": "72 bpm" },
+          { "day": "Friday", "value": "68 bpm" },
+          { "day": "Saturday", "value": "67 bpm" },
+          { "day": "Sunday", "value": "70 bpm" }
+        ]
+      },
+      {
+        "type": "bloodPressure",
+        "readings": [
+          { "day": "Monday", "value": "125/82 mmHg" },
+          { "day": "Tuesday", "value": "127/83 mmHg" },
+          { "day": "Wednesday", "value": "123/81 mmHg" },
+          { "day": "Thursday", "value": "129/84 mmHg" },
+          { "day": "Friday", "value": "124/82 mmHg" },
+          { "day": "Saturday", "value": "122/80 mmHg" },
+          { "day": "Sunday", "value": "126/82 mmHg" }
+        ]
+      },
+      {
+        "type": "temperature",
+        "readings": [
+          { "day": "Monday", "value": "36.7 °C" },
+          { "day": "Tuesday", "value": "36.8 °C" },
+          { "day": "Wednesday", "value": "36.6 °C" },
+          { "day": "Thursday", "value": "36.9 °C" },
+          { "day": "Friday", "value": "36.7 °C" },
+          { "day": "Saturday", "value": "36.5 °C" },
+          { "day": "Sunday", "value": "36.7 °C" }
+        ]
+      },
+      {
+        "type": "oxygenSat",
+        "readings": [
+          { "day": "Monday", "value": "99%" },
+          { "day": "Tuesday", "value": "98%" },
+          { "day": "Wednesday", "value": "99%" },
+          { "day": "Thursday", "value": "97%" },
+          { "day": "Friday", "value": "99%" },
+          { "day": "Saturday", "value": "99%" },
+          { "day": "Sunday", "value": "98%" }
+        ]
+      },
+      {
+        "type": "respiration",
+        "readings": [
+          { "day": "Monday", "value": "15 breaths/min" },
+          { "day": "Tuesday", "value": "16 breaths/min" },
+          { "day": "Wednesday", "value": "15 breaths/min" },
+          { "day": "Thursday", "value": "17 breaths/min" },
+          { "day": "Friday", "value": "15 breaths/min" },
+          { "day": "Saturday", "value": "14 breaths/min" },
+          { "day": "Sunday", "value": "15 breaths/min" }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-014",
+        "title": "X-Ray Results",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-02-15"
+      },
+      {
+        "id": "doc-015",
+        "title": "Joint Mobility Assessment",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-02-18"
+      },
+      {
+        "id": "doc-016",
+        "title": "Rheumatology Report",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-02-22"
+      },
+      {
+        "id": "doc-017",
+        "title": "Physical Therapy Plan",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-02-25"
+      },
+      {
+        "id": "doc-018",
+        "title": "Bone Density Scan",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-03-01"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-018",
+        "author": "Nurse Mehrdad Pishbar",
+        "content": "Joint inflammation has visibly decreased.",
+        "timestamp": "2025-03-01T10:15:00.000Z",
+        "avatarAlias": "nurse-mehrdad-pishbar",
+        "done": false
+      },
+      {
+        "id": "comment-019",
+        "author": "Dr. Laura Mörtel",
+        "content": "Rheumatology consultation scheduled for next month.",
+        "timestamp": "2025-03-02T14:30:00.000Z",
+        "avatarAlias": "dr-laura-moertel",
+        "done": true
+      },
+      {
+        "id": "comment-020",
+        "author": "PA Elena Ramos",
+        "content": "Physical therapy showing good progress on joint mobility.",
+        "timestamp": "2025-03-03T11:00:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": false
+      },
+      {
+        "id": "comment-021",
+        "author": "Dr. Michael Rabb",
+        "content": "Consider adjusting anti-inflammatory medication dosage.",
+        "timestamp": "2025-03-04T16:45:00.000Z",
+        "avatarAlias": "dr-michael-rabb",
+        "done": false
+      },
+      {
+        "id": "comment-022",
+        "author": "Nurse Tania Guzman",
+        "content": "Patient education on joint protection techniques completed.",
+        "timestamp": "2025-03-05T09:20:00.000Z",
+        "avatarAlias": "nurse-tania-guzman",
+        "done": true
+      }
+    ]
+  },
+  {
+    "id": "018e19f7-aa12-7aaf-a3f4-82ce199c2ddf",
+    "firstName": "Vladislov",
+    "lastName": "Ilyov",
+    "gender": "Male",
+    "age": 35,
+    "avatarAlias": "vladislov-ilyov",
+    "patientNumber": "27519",
+    "bloodType": "O+",
+    "admissionDate": "2025-10-25T00:00:00.000Z",
+    "room": "79B",
+    "doctorName": "Dr. Cameron",
+    "contact": {
+      "phone": "555-456-7890",
+      "email": "vlad.ilyov@gmail.com",
+      "address": "654 Maple St"
+    },
+    "prescriptions": [
+      {
+        "id": "presc-019",
+        "medication": "Sumatriptan",
+        "dosage": "50mg",
+        "month": "October",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-020",
+        "medication": "Rizatriptan",
+        "dosage": "10mg",
+        "month": "May",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-021",
+        "medication": "Magnesium",
+        "dosage": "400mg",
+        "month": "June",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-022",
+        "medication": "Simvastatin",
+        "dosage": "40mg",
+        "month": "December",
+        "receiptFree": false
+      }
+    ],
+    "medicalConditions": [
+      { "name": "Migraine", "shortExplanation": "Severe, recurring headache" },
+      {
+        "name": "High Cholesterol",
+        "shortExplanation": "Excess lipids in the blood"
+      },
+      { "name": "Type 2 Diabetes", "shortExplanation": "Insulin resistance" }
+    ],
+    "vitals": [
+      {
+        "type": "heartRate",
+        "readings": [
+          { "day": "Monday", "value": "82 bpm" },
+          { "day": "Tuesday", "value": "83 bpm" },
+          { "day": "Wednesday", "value": "81 bpm" },
+          { "day": "Thursday", "value": "84 bpm" },
+          { "day": "Friday", "value": "80 bpm" },
+          { "day": "Saturday", "value": "79 bpm" },
+          { "day": "Sunday", "value": "82 bpm" }
+        ]
+      },
+      {
+        "type": "bloodPressure",
+        "readings": [
+          { "day": "Monday", "value": "115/75 mmHg" },
+          { "day": "Tuesday", "value": "117/76 mmHg" },
+          { "day": "Wednesday", "value": "113/74 mmHg" },
+          { "day": "Thursday", "value": "119/77 mmHg" },
+          { "day": "Friday", "value": "114/75 mmHg" },
+          { "day": "Saturday", "value": "112/73 mmHg" },
+          { "day": "Sunday", "value": "116/75 mmHg" }
+        ]
+      },
+      {
+        "type": "temperature",
+        "readings": [
+          { "day": "Monday", "value": "37.1 °C" },
+          { "day": "Tuesday", "value": "37.2 °C" },
+          { "day": "Wednesday", "value": "37.0 °C" },
+          { "day": "Thursday", "value": "37.3 °C" },
+          { "day": "Friday", "value": "37.1 °C" },
+          { "day": "Saturday", "value": "36.9 °C" },
+          { "day": "Sunday", "value": "37.1 °C" }
+        ]
+      },
+      {
+        "type": "oxygenSat",
+        "readings": [
+          { "day": "Monday", "value": "97%" },
+          { "day": "Tuesday", "value": "98%" },
+          { "day": "Wednesday", "value": "97%" },
+          { "day": "Thursday", "value": "96%" },
+          { "day": "Friday", "value": "97%" },
+          { "day": "Saturday", "value": "98%" },
+          { "day": "Sunday", "value": "97%" }
+        ]
+      },
+      {
+        "type": "respiration",
+        "readings": [
+          { "day": "Monday", "value": "19 breaths/min" },
+          { "day": "Tuesday", "value": "20 breaths/min" },
+          { "day": "Wednesday", "value": "19 breaths/min" },
+          { "day": "Thursday", "value": "21 breaths/min" },
+          { "day": "Friday", "value": "19 breaths/min" },
+          { "day": "Saturday", "value": "18 breaths/min" },
+          { "day": "Sunday", "value": "19 breaths/min" }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-019",
+        "title": "MRI Scan Results",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-10-28"
+      },
+      {
+        "id": "doc-020",
+        "title": "Neurological Assessment",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-10-30"
+      },
+      {
+        "id": "doc-021",
+        "title": "Migraine Diary",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-11-02"
+      },
+      {
+        "id": "doc-022",
+        "title": "Cholesterol Panel",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-11-05"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-023",
+        "author": "Nurse Tania Guzman",
+        "content": "Patient reports fewer migraine episodes this month.",
+        "timestamp": "2025-11-10T08:45:00.000Z",
+        "avatarAlias": "nurse-tania-guzman",
+        "done": false
+      },
+      {
+        "id": "comment-024",
+        "author": "Dr. Laura Mörtel",
+        "content": "MRI results show no structural abnormalities.",
+        "timestamp": "2025-11-11T13:20:00.000Z",
+        "avatarAlias": "dr-laura-moertel",
+        "done": true
+      },
+      {
+        "id": "comment-025",
+        "author": "NP. Aaron Kewel",
+        "content": "Trigger diary analysis shows stress as primary factor.",
+        "timestamp": "2025-11-12T10:15:00.000Z",
+        "avatarAlias": "np-arron-kewel",
+        "done": false
+      },
+      {
+        "id": "comment-026",
+        "author": "PA Elena Ramos",
+        "content": "Preventive medication working well, continue current regimen.",
+        "timestamp": "2025-11-13T15:30:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": true
+      },
+      {
+        "id": "comment-027",
+        "author": "Dr. Michael Rabb",
+        "content": "Recommend stress management techniques and lifestyle modifications.",
+        "timestamp": "2025-11-14T11:45:00.000Z",
+        "avatarAlias": "dr-michael-rabb",
+        "done": false
+      }
+    ]
+  },
+  {
+    "id": "018e19f9-a112-7aaf-a3f4-82ce199c2ddf",
+    "firstName": "Freja",
+    "lastName": "Lindström",
+    "gender": "Female",
+    "age": 35,
+    "avatarAlias": "freja-lindstroem",
+    "patientNumber": "27519",
+    "bloodType": "O+",
+    "admissionDate": "2025-10-25T00:00:00.000Z",
+    "room": "79B",
+    "doctorName": "Dr. Cameron",
+    "contact": {
+      "phone": "555-456-7890",
+      "email": "lindfreja002@gmail.com",
+      "address": "654 Maple St"
+    },
+    "prescriptions": [
+      {
+        "id": "presc-023",
+        "medication": "Sumatriptan",
+        "dosage": "50mg",
+        "month": "October",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-024",
+        "medication": "Sertraline",
+        "dosage": "50mg",
+        "month": "May",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-025",
+        "medication": "Melatonin",
+        "dosage": "3mg",
+        "month": "June",
+        "receiptFree": true
+      },
+      {
+        "id": "presc-026",
+        "medication": "Lorazepam",
+        "dosage": "0.5mg",
+        "month": "November",
+        "receiptFree": false
+      },
+      {
+        "id": "presc-027",
+        "medication": "B-Complex",
+        "dosage": "1 tablet",
+        "month": "April",
+        "receiptFree": true
+      }
+    ],
+    "medicalConditions": [
+      { "name": "Anxiety", "shortExplanation": "Generalized anxiety disorder" },
+      {
+        "name": "Depression",
+        "shortExplanation": "Persistent feeling of sadness"
+      },
+      {
+        "name": "Insomnia",
+        "shortExplanation": "Persistent difficulty with sleep"
+      },
+      { "name": "Migraine", "shortExplanation": "Severe, recurring headache" }
+    ],
+    "vitals": [
+      {
+        "type": "heartRate",
+        "readings": [
+          { "day": "Monday", "value": "82 bpm" },
+          { "day": "Tuesday", "value": "83 bpm" },
+          { "day": "Wednesday", "value": "81 bpm" },
+          { "day": "Thursday", "value": "84 bpm" },
+          { "day": "Friday", "value": "80 bpm" },
+          { "day": "Saturday", "value": "79 bpm" },
+          { "day": "Sunday", "value": "82 bpm" }
+        ]
+      },
+      {
+        "type": "bloodPressure",
+        "readings": [
+          { "day": "Monday", "value": "115/75 mmHg" },
+          { "day": "Tuesday", "value": "117/76 mmHg" },
+          { "day": "Wednesday", "value": "113/74 mmHg" },
+          { "day": "Thursday", "value": "119/77 mmHg" },
+          { "day": "Friday", "value": "114/75 mmHg" },
+          { "day": "Saturday", "value": "112/73 mmHg" },
+          { "day": "Sunday", "value": "116/75 mmHg" }
+        ]
+      },
+      {
+        "type": "temperature",
+        "readings": [
+          { "day": "Monday", "value": "37.1 °C" },
+          { "day": "Tuesday", "value": "37.2 °C" },
+          { "day": "Wednesday", "value": "37.0 °C" },
+          { "day": "Thursday", "value": "37.3 °C" },
+          { "day": "Friday", "value": "37.1 °C" },
+          { "day": "Saturday", "value": "36.9 °C" },
+          { "day": "Sunday", "value": "37.1 °C" }
+        ]
+      },
+      {
+        "type": "oxygenSat",
+        "readings": [
+          { "day": "Monday", "value": "97%" },
+          { "day": "Tuesday", "value": "98%" },
+          { "day": "Wednesday", "value": "97%" },
+          { "day": "Thursday", "value": "96%" },
+          { "day": "Friday", "value": "97%" },
+          { "day": "Saturday", "value": "98%" },
+          { "day": "Sunday", "value": "97%" }
+        ]
+      },
+      {
+        "type": "respiration",
+        "readings": [
+          { "day": "Monday", "value": "19 breaths/min" },
+          { "day": "Tuesday", "value": "20 breaths/min" },
+          { "day": "Wednesday", "value": "19 breaths/min" },
+          { "day": "Thursday", "value": "21 breaths/min" },
+          { "day": "Friday", "value": "19 breaths/min" },
+          { "day": "Saturday", "value": "18 breaths/min" },
+          { "day": "Sunday", "value": "19 breaths/min" }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-023",
+        "title": "Psychiatric Evaluation",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-10-26"
+      },
+      {
+        "id": "doc-024",
+        "title": "Sleep Study Results",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-10-29"
+      },
+      {
+        "id": "doc-025",
+        "title": "Therapy Session Notes",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-11-01"
+      },
+      {
+        "id": "doc-026",
+        "title": "Medication Review",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-11-03"
+      },
+      {
+        "id": "doc-027",
+        "title": "Brain MRI Report",
+        "url": "frontend/src/assets/patientDocs/dummy.pdf",
+        "date": "2025-11-06"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comment-028",
+        "author": "PA Elena Ramos",
+        "content": "Patient reports fewer migraine episodes this month.",
+        "timestamp": "2025-11-10T08:45:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": true
+      },
+      {
+        "id": "comment-029",
+        "author": "Nurse Tania Guzman",
+        "content": "Patient reports fewer migraine episodes this month.",
+        "timestamp": "2025-11-10T08:45:00.000Z",
+        "avatarAlias": "nurse-tania-guzman",
+        "done": false
+      },
+      {
+        "id": "comment-030",
+        "author": "Dr. Laura Mörtel",
+        "content": "Sleep study results indicate improved sleep patterns.",
+        "timestamp": "2025-11-11T09:30:00.000Z",
+        "avatarAlias": "dr-laura-moertel",
+        "done": true
+      },
+      {
+        "id": "comment-031",
+        "author": "Dr. Michael Rabb",
+        "content": "Psychiatric evaluation shows good response to therapy.",
+        "timestamp": "2025-11-12T14:15:00.000Z",
+        "avatarAlias": "dr-michael-rabb",
+        "done": false
+      },
+      {
+        "id": "comment-032",
+        "author": "NP. Aaron Kewel",
+        "content": "Medication side effects minimal, patient tolerating well.",
+        "timestamp": "2025-11-13T10:45:00.000Z",
+        "avatarAlias": "np-arron-kewel",
+        "done": true
+      },
+      {
+        "id": "comment-033",
+        "author": "Nurse Mehrdad Pishbar",
+        "content": "Need to schedule follow-up therapy sessions.",
+        "timestamp": "2025-11-14T16:20:00.000Z",
+        "avatarAlias": "nurse-mehrdad-pishbar",
+        "done": false
+      },
+      {
+        "id": "comment-034",
+        "author": "PA Elena Ramos",
+        "content": "Family support system assessment completed.",
+        "timestamp": "2025-11-15T11:00:00.000Z",
+        "avatarAlias": "pa-elena-ramos",
+        "done": true
+      }
+    ]
+  }
+]

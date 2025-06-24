@@ -1,0 +1,47 @@
+[
+  {
+    "id": "msg-001",
+    "sender": "Mehrdad Pishbar",
+    "senderRole": "Nurse",
+    "senderAvatarAlias": "nurse-mehrdad-pishbar",
+    "content": "The bed 3B is ready!",
+    "timestamp": "2025-01-15T14:30:00.000Z",
+    "read": false
+  },
+  {
+    "id": "msg-002",
+    "sender": "Michael Rabb",
+    "senderRole": "Dr.",
+    "senderAvatarAlias": "dr-michael-rabb",
+    "content": "I need the latest report on patient Marcus Malik. Can you send it to me?",
+    "timestamp": "2025-01-15T13:45:00.000Z",
+    "read": true
+  },
+  {
+    "id": "msg-003",
+    "sender": "Laura Moertel",
+    "senderRole": "Dr.",
+    "senderAvatarAlias": "dr-laura-moertel",
+    "content": "Please bring me some new supplies for room 7B when you have a moment.",
+    "timestamp": "2025-01-15T12:15:00.000Z",
+    "read": true
+  },
+  {
+    "id": "msg-004",
+    "sender": "Mehrdad Pishbar",
+    "senderRole": "Nurse",
+    "senderAvatarAlias": "nurse-mehrdad-pishbar",
+    "content": "Patient in room 2A needs assistance with medication.",
+    "timestamp": "2025-01-15T13:45:00.000Z",
+    "read": false
+  },
+  {
+    "id": "msg-005",
+    "sender": "Elena Ramos",
+    "senderRole": "PA",
+    "senderAvatarAlias": "pa-elena-ramos",
+    "content": "Vitals for patient in 5C have been updated in the system.",
+    "timestamp": "2025-01-15T15:10:00.000Z",
+    "read": false
+  }
+]

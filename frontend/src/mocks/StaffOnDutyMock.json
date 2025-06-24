@@ -1,0 +1,44 @@
+[
+  {
+    "id": "018e1a01-1234-7e56-89ab-cdef01234567",
+    "name": "Laura Moertel",
+    "role": "Dr.",
+    "avatarAlias": "dr-laura-moertel"
+  },
+  {
+    "id": "018e1a01-2345-7e67-9abc-def012345678",
+    "name": "Michael Rabb",
+    "role": "Dr.",
+    "avatarAlias": "dr-michael-rabb"
+  },
+  {
+    "id": "018e1a01-3456-7e78-abcd-ef0123456789",
+    "name": "Mehrdad Pishbar",
+    "role": "Nurse",
+    "avatarAlias": "nurse-mehrdad-pishbar"
+  },
+  {
+    "id": "018e1a01-4567-7e89-bcde-f0123456789a",
+    "name": "Tania Guzman",
+    "role": "Nurse",
+    "avatarAlias": "nurse-tania-guzman"
+  },
+  {
+    "id": "018e1a01-5678-7e9a-cdef-0123456789ab",
+    "name": "Nirvana Scott",
+    "role": "Dr.",
+    "avatarAlias": "dr-nirvana-scott"
+  },
+  {
+    "id": "018e1a01-6789-7eab-def0-123456789abc",
+    "name": "Arron Kewel",
+    "role": "NP.",
+    "avatarAlias": "np-arron-kewel"
+  },
+  {
+    "id": "018e1a01-789a-7ebc-ef01-23456789abcd",
+    "name": "Elena Ramos",
+    "role": "PA.",
+    "avatarAlias": "pa-elena-ramos"
+  }
+]
