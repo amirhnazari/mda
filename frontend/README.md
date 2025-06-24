@@ -134,7 +134,7 @@ Once the application is running, you can access the Medical Dashboard App throug
   - **Critical (red)** – Urgent medical situations
   - **Warning (yellow)** – Important but non-critical notifications
 
-- **Staff on Duty**: Displays staff members currently on shift. Use the contain search field to find someone and click "Send Message" to open the chat. You'll be redirected to the "Messages" page, where the conversation with the selected person will already be selected.
+- **Staff on Duty**: Displays staff members currently on shift. Use the search field to find someone, then click "Send Message" to open the chat. You'll be redirected to the "Messages" page with the conversation for that person automatically selected.
 
 - **Back Navigation**: Use the back arrow in the sidebar to return to the previous page.
 
