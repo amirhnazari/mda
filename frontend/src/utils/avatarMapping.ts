@@ -9,14 +9,14 @@ import userAvatar from "@avatars/staff/user.webp";
 import staffFallback from "@avatars/staff/staff-fallback.webp";
 
 // Import patient avatars
-import lenaAvatar from "@avatars/pateints/lena-mueller.webp";
-import marcusAvatar from "@avatars/pateints/marcus-malik.webp";
-import noahAvatar from "@avatars/pateints/noah-perrati.webp";
-import oanhAvatar from "@avatars/pateints/oanh-nguyen.webp";
-import vladislovAvatar from "@avatars/pateints/vladislov-ilyov.webp";
-import patientFallback from "@avatars/pateints/pateint-fallback.webp";
-import frejaAvatar from "@avatars/pateints/freja-lindstroem.webp";
-import bedAvatar from "@avatars/pateints/hospital-bed.webp";
+import lenaAvatar from "@avatars/patients/lena-mueller.webp";
+import marcusAvatar from "@avatars/patients/marcus-malik.webp";
+import noahAvatar from "@avatars/patients/noah-perrati.webp";
+import oanhAvatar from "@avatars/patients/oanh-nguyen.webp";
+import vladislovAvatar from "@avatars/patients/vladislov-ilyov.webp";
+import patientFallback from "@avatars/patients/patient-fallback.webp";
+import frejaAvatar from "@avatars/patients/freja-lindstroem.webp";
+import bedAvatar from "@avatars/patients/hospital-bed.webp";
 
 // Avatar mapping for staff and patients
 export const avatarMap: Record<string, string> = {
