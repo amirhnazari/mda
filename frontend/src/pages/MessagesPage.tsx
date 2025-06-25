@@ -1,14 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
-import {
-  Box,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  Button,
-  Typography,
-} from "@mui/material";
+import { Box } from "@mui/material";
 import Inbox from "@components/messaging/Inbox";
 import ChatBox from "@components/messaging/ChatBox";
 import { MessageService } from "@services/MessageService";
@@ -26,8 +18,6 @@ const Messages: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [activeChat, setActiveChat] = useState<Chat | null>(null);
   const [availableStaff, setAvailableStaff] = useState<AvailableStaff[]>([]);
-  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
-  const [messageToDelete, setMessageToDelete] = useState<string | null>(null);
   const [preSelectedStaff, setPreSelectedStaff] =
     useState<AvailableStaff | null>(null);
   const [pendingMessage, setPendingMessage] = useState<Message | null>(null);
@@ -63,40 +53,40 @@ const Messages: React.FC = () => {
       MessageService.markAsRead(message.id);
       setMessages(MessageService.getMessages());
 
-    // Create or get chat with the sender
-    const senderStaff = availableStaff.find(
-      (staff) => staff.name === message.sender
-    );
-    if (senderStaff) {
-      const chat = MessageService.createOrGetChat(senderStaff.id);
-
-      // Add the original message to the chat if it's not already there
-      const messageExists = chat.messages.some(
-        (msg) =>
-          msg.content === message.content &&
-          Math.abs(
-            new Date(msg.timestamp).getTime() -
-              new Date(message.timestamp).getTime()
-          ) < 1000
+      // Create or get chat with the sender
+      const senderStaff = availableStaff.find(
+        (staff) => staff.name === message.sender
       );
+      if (senderStaff) {
+        const chat = MessageService.createOrGetChat(senderStaff.id);
 
-      if (!messageExists) {
-        const chatMessage = {
-          id: `chat-${message.id}`,
-          senderId: senderStaff.id,
-          receiverId: "current-user",
-          content: message.content,
-          timestamp: message.timestamp,
-          isFromCurrentUser: false,
-        };
-        chat.messages.push(chatMessage);
-        chat.lastMessage = chatMessage;
+        // Add the original message to the chat if it's not already there
+        const messageExists = chat.messages.some(
+          (msg) =>
+            msg.content === message.content &&
+            Math.abs(
+              new Date(msg.timestamp).getTime() -
+                new Date(message.timestamp).getTime()
+            ) < 1000
+        );
+
+        if (!messageExists) {
+          const chatMessage = {
+            id: `chat-${message.id}`,
+            senderId: senderStaff.id,
+            receiverId: "current-user",
+            content: message.content,
+            timestamp: message.timestamp,
+            isFromCurrentUser: false,
+          };
+          chat.messages.push(chatMessage);
+          chat.lastMessage = chatMessage;
+        }
+
+        setActiveChat(chat);
       }
-
-      setActiveChat(chat);
-    }
-  },
-  [availableStaff]
+    },
+    [availableStaff]
   );
 
   // Handle pending message once availableStaff is loaded
@@ -108,36 +98,20 @@ const Messages: React.FC = () => {
   }, [pendingMessage, availableStaff, handleMessageClick]);
 
   const handleDeleteMessage = (messageId: string) => {
-    setMessageToDelete(messageId);
-    setDeleteDialogOpen(true);
-  };
-
-  const confirmDelete = () => {
-    if (messageToDelete) {
-      // Delete message and associated chat from service
-      MessageService.deleteMessage(messageToDelete);
-      // If the deleted chat was active, close it immediately
-      if (activeChat) {
-        const messageToDeleteObj = messages.find(
-          (msg) => msg.id === messageToDelete
-        );
-        if (
-          messageToDeleteObj &&
-          activeChat.participantName === messageToDeleteObj.sender
-        ) {
-          setActiveChat(null);
-        }
+    // Delete message and associated chat from service
+    MessageService.deleteMessage(messageId);
+    // If the deleted chat was active, close it immediately
+    if (activeChat) {
+      const messageToDeleteObj = messages.find((msg) => msg.id === messageId);
+      if (
+        messageToDeleteObj &&
+        activeChat.participantName === messageToDeleteObj.sender
+      ) {
+        setActiveChat(null);
       }
-      // Refresh the messages list
-      setMessages(MessageService.getMessages());
     }
-    setDeleteDialogOpen(false);
-    setMessageToDelete(null);
-  };
-
-  const cancelDelete = () => {
-    setDeleteDialogOpen(false);
-    setMessageToDelete(null);
+    // Refresh the messages list
+    setMessages(MessageService.getMessages());
   };
 
   const handleStaffSelect = (staffId: string) => {
@@ -191,33 +165,6 @@ const Messages: React.FC = () => {
           />
         </Box>
       </Box>
-
-      {/* Delete Confirmation Dialog */}
-      <Dialog
-        open={deleteDialogOpen}
-        onClose={cancelDelete}
-        aria-labelledby="delete-dialog-title"
-        aria-describedby="delete-dialog-description"
-      >
-        <DialogTitle id="delete-dialog-title">Delete Message</DialogTitle>
-        <DialogContent>
-          <Typography
-            id="delete-dialog-description"
-            sx={{ fontWeight: "normal" }}
-          >
-            Deleted messages cannot be restored. Are you sure you want to delete
-            this message?
-          </Typography>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={cancelDelete} color="primary">
-            Cancel
-          </Button>
-          <Button onClick={confirmDelete} color="error" variant="contained">
-            Delete
-          </Button>
-        </DialogActions>
-      </Dialog>
     </Box>
   );
 };
