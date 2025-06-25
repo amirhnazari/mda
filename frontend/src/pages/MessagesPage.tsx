@@ -57,14 +57,6 @@ const Messages: React.FC = () => {
     }
   }, [location.state]);
 
-  // Handle pending message once availableStaff is loaded
-  useEffect(() => {
-    if (pendingMessage && availableStaff.length > 0) {
-      handleMessageClick(pendingMessage);
-      setPendingMessage(null);
-    }
-  }, [pendingMessage, availableStaff, handleMessageClick]);
-
   const handleMessageClick = useCallback(
     (message: Message) => {
       // Mark message as read
@@ -106,6 +98,14 @@ const Messages: React.FC = () => {
   },
   [availableStaff]
   );
+
+  // Handle pending message once availableStaff is loaded
+  useEffect(() => {
+    if (pendingMessage && availableStaff.length > 0) {
+      handleMessageClick(pendingMessage);
+      setPendingMessage(null);
+    }
+  }, [pendingMessage, availableStaff, handleMessageClick]);
 
   const handleDeleteMessage = (messageId: string) => {
     setMessageToDelete(messageId);
